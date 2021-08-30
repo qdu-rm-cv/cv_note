@@ -368,7 +368,7 @@
 
 > ​		图像色彩处理是基于色彩和色域来进行图像处理。在OpenCV中，每一个图像对象被抽象成为n维矩阵（下面详细叙述），而图像对象可以是一张图片，视频里的某一帧，摄像头读取到的数据流中的一个数据部分，或者人为赋值产生的一个数据矩阵。在opencv-python中，借助了Numpy进行运算，在C++中可以使用Eigen进行运算加速。
 >
-> | ![图像坐标系](image/图像坐标系.png) |
+> | ![图像坐标系](../image/图像坐标系.png) |
 > | :---------------------------------: |
 > |            *图像坐标系*             |
 >
@@ -426,7 +426,7 @@
 >
 >    The Bayer pattern is widely used in CCD and CMOS cameras. It enables you to get color pictures from a single plane where R,G, and B pixels (sensors of a particular component) are interleaved as follows:
 >
-> 	| ![bayer.png](image/bayer.png) |
+> 	| ![bayer.png](../image/bayer.png) |
 > 	| :---------------------------: |
 > 	|        *Bayer pattern*        |
 >
@@ -2453,13 +2453,13 @@
 >
 > 我们可以用相机标定算出的**内参**和**畸变系数**外加透视的数学模型去拟合这个过程，从而实现二维到三维的转变。故在还原前，需先进行[*相机标定*](https://blog.csdn.net/define9/article/details/119517585)。
 >
-> | ![坐标系关系](image/坐标系关系.png) |
+> | ![坐标系关系](../image/坐标系关系.png) |
 > | :---------------------------------: |
 > |            *坐标系关系*             |
 >
 > 1. 像素坐标系
 >
->    | ![像素坐标系](image/图像坐标系.png) |
+>    | ![像素坐标系](../image/图像坐标系.png) |
 >    | :---------------------------------: |
 >    |      *像素坐标系与图像坐标系*       |
 >
@@ -2690,7 +2690,7 @@
 >
 > **世界坐标系**与**像素坐标系**相互转换：
 >
-> |    ![pnp](image/pnp.jpg)     |
+> |    ![pnp](../image/pnp.jpg)     |
 > | :--------------------------: |
 > | *世界坐标系与像素坐标系转换* |
 >
@@ -2760,7 +2760,7 @@
 > $$
 > 先说明什么叫做相机畸变，如下图。
 >
-> |     ![distcoeff](image/distcoeffs.png)     |
+> |     ![distcoeff](../image/distcoeffs.png)     |
 > | :----------------------------------------: |
 > | *枕形畸变（左）    与      桶形畸变（右）* |
 >
@@ -2768,7 +2768,7 @@
 >
 > 鱼眼相机可以被用于里程计（odometry）以及vslam（simultaneous localization and mapping）。其他应用中，有包括监控系统（surveillance system），GoPro，虚拟现实（VR）要求捕获360度视场角（fov），和一些拼接算法中。这些camera使用了一些列用了复杂的镜头扩大了相机的fov，使它能够捕获广阔的全景（panoramic）或者半球形（hemispherical）图像。但是，镜头是通过扭曲图像中的视线来实现这种超广角视角。所谓相机畸变，则要从相机成像说起，相机成像原理会使相片呈鱼眼形状蜷曲，
 >
-> |              ![fisheye](image/fisheye.jpg)               |
+> |              ![fisheye](../image/fisheye.jpg)               |
 > | :------------------------------------------------------: |
 > | *鱼眼模型成像图片（左）   与     消除鱼眼效应图片（右）* |
 >
@@ -2789,7 +2789,7 @@
 >
 > 需要使用标定板
 >
-> | ![标定板](image/pattern.png) |
+> | ![标定板](../image/pattern.png) |
 > | :--: |
 > | *棋盘标定板* |
 >
@@ -2822,7 +2822,7 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 
 - 工作区、暂存区、版本库概念：
 
-  | ![workspace](image/work.png) |
+  | ![workspace](../image/work.png) |
   | :--: |
   | *工作区、暂存区、版本库的概念* |
 
@@ -2862,7 +2862,7 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 
 #### 	1. 自瞄算法
 
-| ![auto_aim](image/自瞄流程图.png) |
+| ![auto_aim](../image/自瞄流程图.png) |
 | :--: |
 | *自瞄流程图* |
 
@@ -2874,7 +2874,7 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 
 #### 	2. 能量机关识别算法
 
-| ![Buff](image/Buff.png) |
+| ![Buff](../image/Buff.png) |
 | :--: |
 | *能量机关* |
 
