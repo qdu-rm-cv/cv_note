@@ -113,9 +113,9 @@
 >       1. imread
 >
 >          ```C++
->          Mat cv::imread (	const String & 	filename, 
->          					int				flags = IMREAD_COLOR
->                         )	
+>          Mat cv::imread	(	const String &	filename, 
+>          						int				flags = IMREAD_COLOR
+>          					)	
 >          /*
 >          @brief Loads an image from a file.
 >          简介 从文件加载图像。
@@ -131,7 +131,7 @@
 >         2. imwrite
 >
 >            ```C++
->            bool cv::imwrite	(	const String & 				filename,
+>            bool cv::imwrite	(	const String &				filename,
 >            						InputArray 					img,
 >            						const std::vector< int > & 	params = std::vector< int >() 
 >            					)	
@@ -305,8 +305,8 @@
 > > ###### 展示图像
 >
 > > ```C++
-> > void cv::imshow	(	const String & 	winname,
-> > 					InputArray 	mat 
+> > void cv::imshow	(	const String &	winname,
+> > 					InputArray		mat 
 > > 				)
 > > /** 
 > > @brief Displays an image in the specified window.
@@ -582,8 +582,8 @@
 >
 > > ```C++
 > > void cv::merge	(	const Mat* 		mv, 
-> >   					size_t 			count, 
-> >   					OutputArray 	dst
+> > 					size_t 			count, 
+> > 					OutputArray 	dst
 > > 				)
 > > /** 
 > > @brief Creates one multi-channel array out of several single-channel ones.
@@ -616,13 +616,14 @@
 > > */
 > > 
 > > void cv::merge	(	InputArrayOfArrays 	mv, 
-> >    					OutputArray 		dst
-> >    				)
+> > 					OutputArray 		dst
+> > 				)
 > > /**
 > > @overload
 > > @param mv input vector of matrices to be merged; all the matrices in mv must have the same size and the same depth.
 > > @param dst output array of the same size and the same depth as mv[0]; The number of channels will be the total number of channels in the matrix array.
 > > */
+> > ```
 >
 > > ######  通道混合
 >
@@ -671,7 +672,7 @@
 > > 							InputOutputArrayOfArrays 	dst,
 > > 							const int * 				fromTo,
 > > 							size_t 						npairs 
-> >                      		)
+> >                      	)
 > > /**
 > >  @overload
 > >  @param src input array or vector of matrices; all of the matrices must have the same size and the same depth.
@@ -2823,8 +2824,8 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 - 工作区、暂存区、版本库概念：
 
   | ![workspace](../image/work.png) |
-  | :--: |
-  | *工作区、暂存区、版本库的概念* |
+  | :-----------------------------: |
+  | *工作区、暂存区、版本库的概念*  |
 
   工作区：就是你在电脑里能看到的目录。
   暂存区：英文叫 stage 或 index。一般存放在 .git 目录下的 index 文件（.git/index）中， 	所以我们把暂存区有时也叫作索引（index）。
@@ -2863,8 +2864,8 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 #### 	1. 自瞄算法
 
 | ![auto_aim](../image/自瞄流程图.png) |
-| :--: |
-| *自瞄流程图* |
+| :----------------------------------: |
+|             *自瞄流程图*             |
 
 1. 预处理。根据队伍不同来进行不同颜色通道相减操作，目的是在图像中凸显出灯条，然后进行二值化处理来增强灯条和去除噪点，用拿到的二值化图像做开运算进一步去除图像噪点，最后提取得到的轮廓。
 
@@ -2875,8 +2876,8 @@ Git如今已经各大主流IDE所集成，例如VS，VSC，JB全家桶
 #### 	2. 能量机关识别算法
 
 | ![Buff](../image/Buff.png) |
-| :--: |
-| *能量机关* |
+| :------------------------: |
+|         *能量机关*         |
 
 1. 预处理。根据能量机关颜色不同进行不同的通道相减，得到能量机关的大体轮廓，然后进行二值化处理增强能量机关的轮廓和去除无用的噪点，根据能量机关灯条的特征，使用膨胀加闭运算进一步减少不必要的轮廓，然后提取轮廓。
 
