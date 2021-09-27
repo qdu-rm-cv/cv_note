@@ -472,13 +472,13 @@
 > >  
 > > type of the threshold operation
 > > 
-> >| type name              | method                                                       | image![origin](image\threshold)                  |
+> >| type name              | method                                                       | image![origin](../image/threshold.png)                  |
 > >| ---------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
-> > | THRESH_BINARY   = 0    | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{maxval} &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\0 & otherwise\end{matrix}\right.$$ | ![binary](image\binary.png)                      |
-> >| THRESH_BINARY_INV = 1  | $$\texttt{dst} (x,y) =\left\{\begin{matrix}0 &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{maxval} & otherwise\end{matrix}\right.$$ | ![binary_inv](image\binary_inv.png)              |
-> > | THRESH_TRUNC   = 2     | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{threshold} &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{src}(x,y) & otherwise\end{matrix}\right.$$ | ![image-20210807003033007](image\trunc.png)      |
-> > | THRESH_TOZERO   = 3    | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{src}(x,y) &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\0 & otherwise\end{matrix}\right.$$ | ![image-20210807003054243](image\tozero.png)     |
-> > | THRESH_TOZERO_INV = 4, | $$\texttt{dst} (x,y) =\left\{\begin{matrix}0 &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{src}(x,y) & otherwise\end{matrix}\right.$$ | ![image-20210807003018397](image\tozero_inv.png) |
+> > | THRESH_BINARY   = 0    | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{maxval} &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\0 & otherwise\end{matrix}\right.$$ | ![binary](../image/binary.png)                      |
+> >| THRESH_BINARY_INV = 1  | $$\texttt{dst} (x,y) =\left\{\begin{matrix}0 &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{maxval} & otherwise\end{matrix}\right.$$ | ![binary_inv](../image/binary_inv.png)              |
+> > | THRESH_TRUNC   = 2     | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{threshold} &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{src}(x,y) & otherwise\end{matrix}\right.$$ | ![image-20210807003033007](../image/trunc.png)      |
+> > | THRESH_TOZERO   = 3    | $$\texttt{dst} (x,y) =\left\{\begin{matrix}\texttt{src}(x,y) &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\0 & otherwise\end{matrix}\right.$$ | ![image-20210807003054243](../image/tozero.png)     |
+> > | THRESH_TOZERO_INV = 4, | $$\texttt{dst} (x,y) =\left\{\begin{matrix}0 &  if\ (\texttt{src}(x,y) > \texttt{thresh})\\\texttt{src}(x,y) & otherwise\end{matrix}\right.$$ | ![image-20210807003018397](../image/tozero_inv.png) |
 > > | THRESH_MASK    = 7,    |                                                              |                                                  |
 > > | THRESH_OTSU    = 8,    | flag, use Otsu algorithm to choose the optimal threshold value |                                                  |
 > > | THRESH_TRIANGLE  = 16  | flag, use Triangle algorithm to choose the optimal threshold value |                                                  |
@@ -2341,7 +2341,7 @@
 > > | MARKER_TRIANGLE_UP   | An upwards pointing triangle marker shape.                  |
 > > | MARKER_TRIANGLE_DOWN | A downwards pointing triangle marker shape.                 |
 > >
-> > ![marker](image\marker.png)
+> > ![marker](../image/marker.png)
 >
 > > ###### 轮廓绘制
 >
