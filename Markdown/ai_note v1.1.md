@@ -25,12 +25,11 @@
 | 版本 | 详细信息                                        |
 | ---- | ----------------------------------------------- |
 | v1.0 | 结束OpenCV部分内容编写和基础的Git与算法部分编写 |
+| v1.1 | 修改一些小错误 |
 
 ## 目录
 
 [TOC]
-
-
 
 ## 内容
 
@@ -41,18 +40,18 @@
 > 注：此篇章例程均为OpenCV官方所给出示例，不符合qdu-rm-ai编码规范
 >
 >
-> | 章节                      | 主要参考文件                   |
-> | ------------------------- | ------------------------------ |
-> | 1. 基础类型与图像视频读取 | `imgcodecs.hpp`、`videoio.hpp` |
-> | 2. 图像显示与GUI界面      | `highgui.hpp`                  |
-> | 3. 图像色彩学             | `imgproc.hpp`                  |
-> | 4. 图像几何学             | `core.hpp`                     |
-> | 5, 图像形态学             | `imgproc.hpp`                  |
-> | 6. 图像轮廓处理           | `imgproc.hpp`                  |
-> | 7. 映射变换               | `imgproc.hpp`                  |
-> | 8. 绘图函数               | `imgproc.hpp`                  |
-> | 9. 空间位置解算           | `calib3d.hpp`                  |
-> | 10. 相机标定              | `calib3d.hpp`                  |
+> | 章节                                                       | 主要参考文件                   |
+> | ---------------------------------------------------------- | ------------------------------ |
+> | [1. 基础类型与图像视频读取](####1.-基础类型与图像视频读取) | `imgcodecs.hpp`、`videoio.hpp` |
+> | [2. 图像显示与GUI](####2.-图像显示与GUI)                   | `highgui.hpp`                  |
+> | [3. 图像色彩学](####3.-图像色彩学)                         | `imgproc.hpp`                  |
+> | [4. 图像几何学](####4.-图像几何学)                         | `core.hpp`                     |
+> | [5, 图像形态学](####5.-图像形态学)                         | `imgproc.hpp`                  |
+> | [6. 图像轮廓处理](####6.-图像轮廓处理)                     | `imgproc.hpp`                  |
+> | [7. 映射变换](####7.-映射变换)                             | `imgproc.hpp`                  |
+> | [8. 绘图函数](####8.-绘图函数)                             | `imgproc.hpp`                  |
+> | [9. 空间位置解算](####9.-空间位置解算)                     | `calib3d.hpp`                  |
+> | [10. 相机标定](####10.-相机标定)                           | `calib3d.hpp`                  |
 >
 
 #### 1. 基础类型与图像视频读取
@@ -77,7 +76,7 @@
 >
 > 2. ##### Mat  图像类
 >
->    ` Mat`本质是一个n维密集运算数组，相似的有`UMat`，表示GPU Mat
+>    `Mat`本质是一个n维密集运算数组，相似的有`UMat`，表示GPU Mat，`GMat`，表示G-API的Mat接口。
 >
 >
 > 3. ##### 运算类
@@ -103,9 +102,8 @@
 >    | `Scalar`      | 通道类     |
 >    | `Size`        | 规格类     |
 >
-> 
 >
-> #### 	2.  图像视频IO
+> #### 2.  图像视频IO
 >
 >
 >    1. 函数
@@ -138,10 +136,10 @@
 >            /*
 >            @brief Saves an image to a specified file.
 >            简介 将图像保存到指定文件。
->                                                                   
+>                                                                                  
 >            The function imwrite saves the image to the specified file. The image format is chosen based on the filename extension (see cv::imread for the list of extensions). In general, only 8-bit single-channel or 3-channel (with 'BGR' channel order) images can be saved using this function
 >            imwrite函数将图像保存到指定的文件中。根据文件扩展名选择图像格式（有关扩展名列表，请参阅cv::imread）。通常，使用此功能只能保存8位单通道或3通道（具有“BGR”通道顺序）图像
->                                                                   
+>                                                                                  
 >            @param filename Name of the file.
 >            @param img (Mat or vector of Mat) Image or Images to be saved.
 >            @param params Format-specific parameters encoded as pairs (paramId_1, paramValue_1, paramId_2, paramValue_2, ... .) see cv::ImwriteFlags
@@ -223,14 +221,14 @@
 >             //常用函数 
 >              				VideoWriter (const String &filename, int apiPreference, int fourcc, double fps, Size frameSize, bool isColor=true)
 >             				//VideoWriter进行了四次有参重载，一次无参重载
->                                                                                                                                                 
+>                                                                                                                                                                                     
 >             virtual bool 	isOpened () const
 >             virtual bool 	open (const String &filename, int fourcc, double fps, Size frameSize, bool isColor=true)
 >             				//open进行了四次重载
->                                                                                                                                                 
+>                                                                                                                                                                                     
 >             virtual double 	get (int propId) const
 >             virtual bool 	set (int propId, double value)
->                                                                                                                                                 
+>                                                                                                                                                                                     
 >             virtual VideoWriter & 	operator<< (const Mat &image)   
 >             ```
 >
@@ -294,7 +292,7 @@
 >             ```
 >
 
-#### 	2. 图像显示与GUI
+#### 2. 图像显示与GUI
 
 > OpenCV是计算机视觉库，有了图像处理，当然不可或缺的有图像显示和相应的图形界面接口了。
 >
@@ -348,7 +346,7 @@
 > > int cv::waitKey	(	int 	delay = 0	)	
 > > /** 
 > > @brief Waits for a pressed key.
-> > @简短 等待一个按下的键。
+> > 简介 等待一个按下的键。
 > > 
 > > The function waitKey waits for a key event infinitely (when delay <= 0 or for delay milliseconds, when it is positive. Since the OS has a minimum time between switching threads, the function will not wait exactly delay ms, it will wait at least delay ms, depending on what else is running on your computer at that time. It returns the code of the pressed key or -1 if no key was pressed before the specified time had elapsed.
 > > 函数waitKey无限期地等待一个键事件（当延迟<=0时）或延迟毫秒（当它为正时）。由于操作系统在切换线程之间有一个最小的时间间隔，因此函数不会完全延迟ms，它将至少延迟ms，这取决于当时计算机上运行的其他内容。它返回按下的键的代码，如果在指定时间之前没有按下任何键，则返回-1。
@@ -364,7 +362,7 @@
 > > ```
 
 
-####    3. 图像色彩学
+#### 3. 图像色彩学
 
 > ​		图像色彩处理是基于色彩和色域来进行图像处理。在OpenCV中，每一个图像对象被抽象成为n维矩阵（下面详细叙述），而图像对象可以是一张图片，视频里的某一帧，摄像头读取到的数据流中的一个数据部分，或者人为赋值产生的一个数据矩阵。在opencv-python中，借助了Numpy进行运算，在C++中可以使用Eigen进行运算加速。
 >
@@ -445,7 +443,7 @@
 > > 							double 			thresh,
 > > 							double 			maxval,
 > > 							int 			type 
-> >                      	)	
+> >                      		)	
 > >    /**
 > > @brief Applies a fixed-level threshold to each array element.
 > > 简洁 将固定级别阈值应用于每个数组元素。
@@ -1709,7 +1707,7 @@
 > > ```
 > >
 > > $$
-> > $\texttt{dst} =  \frac{\partial^{xorder+yorder} \texttt{src}}{\partial x^{xorder} \partial y^{yorder}}
+> > \texttt{dst} =  \frac{\partial^{xorder+yorder} \texttt{src}}{\partial x^{xorder} \partial y^{yorder}}
 > > $$
 > >
 > > ```C++
@@ -1886,7 +1884,7 @@
 >
 > 其实还有一些函数如凸包检测、近似三角形、多边形填充等等函数，但是在比赛中不会使用，在此不再赘述
 
-#### 	6. 映射变换
+#### 	7. 映射变换
 
 > 变换就是把一幅图像中某个位置的像素放置到另一个图片中指定位置的过程，用一个数学公式来表示就是：
 > $$
