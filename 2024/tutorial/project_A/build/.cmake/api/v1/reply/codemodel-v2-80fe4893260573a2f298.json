@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "square",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "liba::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-liba-Debug-c29100cb631ac59aa65d.json",
+					"name" : "liba",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libp-Debug-6ed6347ca75b5ad6ab46.json",
+					"name" : "libp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "square_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-square_node-Debug-ffbc911087a640e28c31.json",
+					"name" : "square_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/song/tutorial/project_A/build",
+		"source" : "/home/song/tutorial/project_A"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

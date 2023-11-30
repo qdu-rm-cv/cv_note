@@ -1,0 +1,182 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/apps/infantry/exe_infantry"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"src/apps/infantry/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g  "
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "SPDLOG_COMPILED_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/song/tutorial/project_B/src/device/camera"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/song/tutorial/project_B/src/device/imu"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/song/tutorial/project_B/src/vision/detector"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/song/tutorial/project_B/src/vision/predictor"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Dcamera::@6c51c7537a3f6d2783c4"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Dimu::@881b61dfaee82ddf878c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "detector::@f796d4ce997060f5d224"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "predictor::@21708cfc127fd65eb95f"
+		}
+	],
+	"id" : "exe_infantry::@a9aaad5ac175a2706006",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../device/camera/libDcamera.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../device/imu/libDimu.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vision/detector/libdetector.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../vision/predictor/libpredictor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/local/lib/libspdlog.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "exe_infantry",
+	"nameOnDisk" : "exe_infantry",
+	"paths" : 
+	{
+		"build" : "src/apps/infantry",
+		"source" : "src/apps/infantry"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/apps/infantry/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

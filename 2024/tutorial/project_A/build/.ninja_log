@@ -1,0 +1,17 @@
+# ninja log v5
+0	14	1696264825249903298	CMakeFiles/libp.dir/src/perimeter.cpp.o	de4dded0d9ae5311
+0	17	1696264825253903422	CMakeFiles/liba.dir/src/area.cpp.o	661ea4c776cbf625
+0	188	1696264858662925738	CMakeFiles/square.dir/src/main.cpp.o	7e1748c1597ccca9
+0	16	1696264868387218094	CMakeFiles/libp.dir/src/perimeter.cpp.o	de4dded0d9ae5311
+0	16	1696264868391218214	CMakeFiles/liba.dir/src/area.cpp.o	661ea4c776cbf625
+16	26	1696264868399218454	liblibp.a	1bb8df92d706e821
+16	34	1696264868407218693	libliba.so	82a32cef42deab6b
+34	75	1696264868447219891	square	3b0448a79202ab57
+0	179	1696265337963289072	CMakeFiles/square_node.dir/src/main.cpp.o	b6d9b589820b5f7a
+0	183	1696265337967289163	CMakeFiles/square_node.dir/src/log.cpp.o	394716cf106e7e87
+183	223	1696265338007290066	square_node	67cebd0d0d8dd377
+1	16	1696266029193365862	CMakeFiles/libp.dir/src/perimeter.cpp.o	f4383194cc5e3dec
+16	28	1696266029205366089	liblibp.a	1bb8df92d706e821
+1	205	1696266029385369499	CMakeFiles/square_node.dir/src/log.cpp.o	77e2aa3d93b4e55c
+1	583	1696266029761376623	CMakeFiles/square_node.dir/src/main.cpp.o	b8a8e210524d386c
+583	675	1696266029853378366	square_node	d390bb664eb53f28

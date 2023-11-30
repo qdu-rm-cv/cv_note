@@ -1,0 +1,423 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						6,
+						10,
+						11,
+						12
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/device",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/device"
+				},
+				{
+					"build" : "src/device/camera",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "src/device/camera",
+					"targetIndexes" : 
+					[
+						0,
+						7
+					]
+				},
+				{
+					"build" : "src/device/imu",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "src/device/imu",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/device/lidar",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "src/device/lidar",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src/vision",
+					"childIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/vision"
+				},
+				{
+					"build" : "src/vision/detector",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 4,
+					"source" : "src/vision/detector",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src/vision/locate",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 5,
+					"source" : "src/vision/locate",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src/vision/predictor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 6,
+					"source" : "src/vision/predictor",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "src/apps/hero",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 7,
+					"source" : "src/apps/hero",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/apps/sentry",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 8,
+					"source" : "src/apps/sentry",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/apps/infantry",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 9,
+					"source" : "src/apps/infantry",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						6
+					],
+					"name" : "project_B"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Dcamera",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Dimu",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "Dlidar",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "detector",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "locate",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "predictor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "exe_hero",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "exe_sentry",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "exe_infantry",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "Dcamera::@6c51c7537a3f6d2783c4",
+					"jsonFile" : "target-Dcamera-Debug-34648a39aa39b3e61ac5.json",
+					"name" : "Dcamera",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Dimu::@881b61dfaee82ddf878c",
+					"jsonFile" : "target-Dimu-Debug-bdfeb2eaf701bfe2a33b.json",
+					"name" : "Dimu",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Dlidar::@481643cc69dab41c8951",
+					"jsonFile" : "target-Dlidar-Debug-7b86469ae4ffec94f313.json",
+					"name" : "Dlidar",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "detector::@f796d4ce997060f5d224",
+					"jsonFile" : "target-detector-Debug-09b1f0a26015adfb353b.json",
+					"name" : "detector",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "exe_hero::@9ac3a8fab8c9a7e0bbe9",
+					"jsonFile" : "target-exe_hero-Debug-934c0d012c132305e7d4.json",
+					"name" : "exe_hero",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "exe_infantry::@a9aaad5ac175a2706006",
+					"jsonFile" : "target-exe_infantry-Debug-41504a6a5b94da793173.json",
+					"name" : "exe_infantry",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "exe_sentry::@50780b05d3345f63353d",
+					"jsonFile" : "target-exe_sentry-Debug-3596115780e224ba53d3.json",
+					"name" : "exe_sentry",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "hello::@6c51c7537a3f6d2783c4",
+					"jsonFile" : "target-hello-Debug-490c193e305968bba7ae.json",
+					"name" : "hello",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "locate::@7511ef2f0b58ade0f974",
+					"jsonFile" : "target-locate-Debug-798063c458d88a9e7201.json",
+					"name" : "locate",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "predictor::@21708cfc127fd65eb95f",
+					"jsonFile" : "target-predictor-Debug-cbfc94101d5d5eac341b.json",
+					"name" : "predictor",
+					"projectIndex" : 6
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/song/tutorial/project_B/build",
+		"source" : "/home/song/tutorial/project_B"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

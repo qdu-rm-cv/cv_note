@@ -1,0 +1,21 @@
+# ninja log v5
+1	1202	1696274420993380938	src/apps/infantry/CMakeFiles/exe_infantry.dir/main.cpp.o	b610680407de36ab
+1	1213	1696274421005381124	src/apps/sentry/CMakeFiles/exe_sentry.dir/main.cpp.o	7f53680de20b615a
+0	1221	1696274421013381248	src/device/imu/CMakeFiles/Dimu.dir/imu.cpp.o	3e87658ff473ef7a
+1221	1260	1696274421053381868	src/device/imu/libDimu.a	2d89b155e36a43ff
+1	1315	1696274421105382674	src/apps/hero/CMakeFiles/exe_hero.dir/main.cpp.o	d049e50abb82e5a3
+0	2422	1696274422209399780	src/device/lidar/CMakeFiles/Dlidar.dir/lidar.cpp.o	f5acbd9c3d769293
+2422	2456	1696274422249400400	src/device/lidar/libDlidar.a	c529a8d3852dcbd5
+0	2458	1696274422249400400	src/device/camera/CMakeFiles/Dcamera.dir/camera.cpp.o	91cb2642ef2999bc
+2458	2488	1696274422281400896	src/device/camera/libDcamera.a	2d3587729b4ba4b3
+0	2506	1696274422297401144	src/vision/locate/CMakeFiles/locate.dir/locate.cpp.o	1afbdd82983c1cfb
+2506	2529	1696274422321401516	src/vision/locate/liblocate.a	d4d2d33f9db1911c
+0	2546	1696274422333401702	src/vision/predictor/CMakeFiles/predictor.dir/predictor.cpp.o	ee1f8d8f1c88db50
+2546	2569	1696274422361402136	src/vision/predictor/libpredictor.a	7a1616288985711b
+0	2586	1696274422377402383	src/vision/detector/CMakeFiles/detector.dir/detector.cpp.o	a81ae584ccfcb189
+2586	2609	1696274422401402755	src/vision/detector/libdetector.a	437f30d37dad140a
+2610	2781	1696274422573405420	src/apps/sentry/exe_sentry	8a41a9bdb102d075
+2609	2797	1696274422589405668	src/apps/hero/exe_hero	f0fece87ef255fe0
+2610	2822	1696274422613406040	src/apps/infantry/exe_infantry	9ee3826632322225
+1	729	1697096268137358226	src/apps/hero/CMakeFiles/exe_hero.dir/main.cpp.o	d049e50abb82e5a3
+729	848	1697096268257359385	src/apps/hero/exe_hero	f0fece87ef255fe0
